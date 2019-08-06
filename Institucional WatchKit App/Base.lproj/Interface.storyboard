@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Empresa-->
+        <scene sceneID="shb-Le-YI0">
+            <objects>
+                <controller title="Empresa" id="g6z-FY-Tov">
+                    <items>
+                        <group width="1" alignment="left" id="VGU-cx-DdV">
+                            <items>
+                                <imageView alignment="left" image="empresa" id="tDp-kv-85n"/>
+                                <label alignment="center" verticalAlignment="center" text="Empresa" textAlignment="left" id="bmf-YN-bI3"/>
+                            </items>
+                        </group>
+                        <label width="136" height="94" alignment="left" text="A empresa foi constituída em 1990, seus fundadores...." numberOfLines="0" id="ec8-q7-dEt"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="-254"/>
+        </scene>
+        <!--Clientes-->
+        <scene sceneID="405-r4-slv">
+            <objects>
+                <controller title="Clientes" id="Fgv-CO-0bT">
+                    <items>
+                        <group width="1" alignment="left" id="dP7-9Y-pPD">
+                            <items>
+                                <imageView alignment="left" image="clientes" id="c0c-Zg-z6x"/>
+                                <label alignment="center" verticalAlignment="center" text="Contato" textAlignment="left" id="iyB-rh-vzH"/>
+                            </items>
+                        </group>
+                        <label width="94" alignment="left" text="+ ldlsamdlla" id="ZjL-Yd-0nk"/>
+                        <label alignment="left" text="+ skncdands" id="h5z-82-aJq"/>
+                        <label alignment="left" text="+ kldnsckds" id="ebV-Gc-JSI"/>
+                        <label alignment="left" text="+ kasndfkna" id="FqC-vq-jTz"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="294" y="-254"/>
+        </scene>
+        <!--Serviços-->
+        <scene sceneID="CLh-lw-rSY">
+            <objects>
+                <controller title="Serviços" id="QOf-fC-ZyG">
+                    <items>
+                        <group width="1" alignment="left" id="1xZ-GV-Ku1">
+                            <items>
+                                <imageView alignment="left" image="servicos" id="2v9-48-krI"/>
+                                <label alignment="center" verticalAlignment="center" text="Serviços" textAlignment="left" id="Wsl-0s-S3a"/>
+                            </items>
+                        </group>
+                        <label alignment="left" text="e-mail: apple@apple.com" numberOfLines="0" id="oq2-Rd-BmV">
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="300" y="31"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller fullBounds="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Institucional_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <imageView alignment="left" image="logo" id="Ahc-5D-1ew"/>
+                        <group width="1" alignment="left" id="DfR-8p-C3Z">
+                            <items>
+                                <button width="0.5" alignment="left" title="Empresa" id="kxI-Xy-LfG">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" red="0.86420518160000004" green="0.46924722190000001" blue="0.3215249181" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                    <connections>
+                                        <segue destination="g6z-FY-Tov" kind="push" id="XyX-8L-2uR"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="Clientes" id="gfw-QT-WVZ">
+                                    <color key="backgroundColor" red="0.38150757549999997" green="0.80819612740000002" blue="0.7803943753" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                    <connections>
+                                        <segue destination="Fgv-CO-0bT" kind="push" id="M6Y-dU-WPa"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="IQF-2f-Z7Z">
+                            <items>
+                                <button width="0.5" alignment="left" title="Serviços" id="90B-lk-1Xv">
+                                    <color key="backgroundColor" red="0.73534804580000002" green="0.78584843869999998" blue="0.34891209010000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                    <connections>
+                                        <segue destination="QOf-fC-ZyG" kind="push" id="bwr-KF-bgJ"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="Contato" id="7yX-JY-1Xc">
+                                    <color key="backgroundColor" red="0.47137326000000002" green="0.73200160260000002" blue="0.56468421219999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                    <connections>
+                                        <segue destination="f4D-qD-vfR" kind="push" id="bDh-Ee-Qxo"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+        </scene>
+        <!--Contato-->
+        <scene sceneID="fUj-RZ-kfO">
+            <objects>
+                <controller title="Contato" id="f4D-qD-vfR">
+                    <items>
+                        <group width="1" alignment="left" id="JpJ-v1-gsb">
+                            <items>
+                                <imageView alignment="left" image="contato" id="df9-ax-dAH"/>
+                                <label alignment="center" verticalAlignment="center" text="Contato" textAlignment="left" id="8Gn-jk-suD"/>
+                            </items>
+                        </group>
+                        <label alignment="left" text="e-mail: apple@apple.com" numberOfLines="0" id="9wu-NX-D6R">
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="300" y="334"/>
+        </scene>
+    </scenes>
+</document>
